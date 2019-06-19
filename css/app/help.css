@@ -1,0 +1,82 @@
+.answer,
+.bank-table {
+  border: 1px solid #E5E5E5
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+.module-bottomborder {
+  padding-left: 15px;
+  border-bottom: 1px solid #E5E5E5
+}
+
+.guide {
+  height: 45px;
+  line-height: 45px
+}
+
+.fb {
+  font-weight: 700
+}
+
+.font-size14 {
+  font-size: 14px
+}
+
+.answer,
+.font-size12 {
+  font-size: 12px
+}
+
+.font-navline {
+  color: #3B4252
+}
+
+.question {
+  line-height: 43px;
+  height: 43px;
+  border-top: 1px solid #E5E5E5;
+  width: 100%
+}
+
+.font-blue {
+  color: #566B96
+}
+
+.answer {
+  line-height: 20px;
+  margin: 0 15px 15px 25px;
+  padding: 10px
+}
+
+.font-gray6 {
+  color: #666
+}
+
+h3 {
+  text-align: center
+}
+
+.bank-table {
+  border-collapse: collapse
+}
+
+.bank-table td,
+.bank-table th {
+  border: 1px solid #E5E5E5;
+  padding: 3px 0;
+  text-align: center
+}
+
+div,
+p,
+span,
+table,
+td,
+th {
+  font-family: "Microsoft YaHei"
+}
+
