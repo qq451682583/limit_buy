@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="Zhangextend">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="minimal-ui,initial-scale=1,user-scalable=no, width=device-width">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>涨停板-股票盈利助推器|股票策略|涨八</title>
+    <meta name="keywords" content="股票策略,#{WEB_CN},涨八,策略平台,免费策略,#{WEB_CN}官网,涨八官网,股票杠杆,杠杆炒股">
+    <meta name="description" content="（一）按天操盘，灵活建仓，高效利用资金（二）灵活放大操盘资金，无需抵押担保，放大您的盈利（三）资金银行托管，券商保障交易，专业风控把关。">
+    <link rel="stylesheet" href="../../css/app/extend.css">
+    <script src="../../js/lib/jq-lib.js"></script>
+    <script src="../../js/lib/ng-lib.js"></script>
+    <script src="../../js/lib/ng-util.js"></script>
+    <script src="../../js/commonAPI/commonAPI.js"></script>
+    <script src="../../js/app/extend.js"></script>
+  </head>
+  <body ng-controller="extendDetailUserController">
+    <ul class="detail-tab clearfix">
+      <li class="selected" ng-click="extendPeople()">       <span class="word-gray">推广用户</span><span class="word-data" ng-bind="successInvite"></span></li>
+      <li ng-click="extendProfit()">           <span class="word-gray">推广收益</span><span class="word-data" ng-bind="successPayBack"></span></li>
+    </ul>
+    <div class="JS-detaillist">
+      <ul class="detail-list"><div infinite-scroll='reddit.nextPage()' infinite-scroll-disabled='reddit.busy' infinite-scroll-distance='1'>
+        <li class="clearfix" ng-repeat="extend in reddit.items">
+          <div class="l-left"><span ng-bind="extend.telephone"></span><span class="color-g">注册时间：{{extend.regDate|DatePointerFilter}}</span></div>
+          <div class="r-state" ng-if="!extend.trading">当前未操盘</div>
+        </li></div>
+<zhang8-Tip  error='error'></zhang8-Tip>                          
+      </ul>
+    </div>
+  </body>
+</html>
